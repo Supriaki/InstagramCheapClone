@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+@import "./var-stale.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("../img/bg.gif");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+
+header {
+  background: #b2e5e7;
+}
+
+#searchbar {
+  display: block;
+  margin-right: 15rem;
+}
+
+.logo {
+  /* background-color: aliceblue; */
+  width: 65px;
+  height: 65px;
+  float: left;
+  padding: 10px;
+  background-size: cover;
+  background-image: url("../img/logo1.0.png");
+}
+
+/* Reszta strony */
+
+#szablon {
+  background-color: var(--szablon-color);
+  height: var(--szablon-height);
+  width: var(--szablon-width);
+
+  /* position: relative; */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+#szablon_trojkat {
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 760px 0 760px;
+  border-color: #e8e5e5 transparent transparent transparent;
+}
+
+#tekst-logo{
+  display: inline-block;
+}

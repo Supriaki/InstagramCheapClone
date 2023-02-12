@@ -1,0 +1,103 @@
+@import "./var-stale.css";
+
+a:link {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(26, 138, 244);
+}
+
+a:active {
+  color: blue;
+}
+
+.wszystkiezdj_img {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-block {
+  width: 30%;
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .skill-block {
+    padding: 32px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skill-block {
+    padding: 56px !important;
+  }
+}
+
+.wszystkiezdj_body {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  /* background-color: grey; */
+}
+
+.wszystkiezdj_wys {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--card_border_radius);
+}
+
+.pin_container {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card_width));
+  grid-auto-rows: var(--row_increment);
+  justify-content: center;
+
+  background-color: var(--szablon-color);
+}
+
+.card {
+  padding: 0;
+  margin: 15px 10px;
+  border-radius: var(--card_border_radius);
+  /* background-color: red; */
+}
+
+.card_small {
+  grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+  grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+  grid-row-end: span var(--card_large);
+}
+
+.bg-nieb {
+  background-color: #b2e5e7;
+}
+
+.bg-kraniec {
+  background-color: #34b4f4;
+}
+
+.bg-srodek {
+  background-color: #25abb0;
+}
+
+.bg-opis {
+  background-color: #050707;
+}
